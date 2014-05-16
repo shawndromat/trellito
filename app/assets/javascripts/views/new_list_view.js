@@ -19,5 +19,8 @@ window.Trellino.Views.NewListView = Backbone.View.extend({
         view.render();
       }
     })
+  },
+  leave: function () {
+    this.remove();
   }
 })

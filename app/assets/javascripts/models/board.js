@@ -6,7 +6,7 @@ window.Trellino.Models.Board = Backbone.Model.extend({
   lists: function (){
     if(!this._lists) {
       var board = this
-      this._lists = new Trellino.Collections.BoardLists({board: board});
+      this._lists = new Trellino.Collections.BoardLists([], {board: board});
     }
     return this._lists;
   },
