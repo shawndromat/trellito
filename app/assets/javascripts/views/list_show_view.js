@@ -2,7 +2,7 @@ window.Trellino.Views.ListShowView = Backbone.CompositeView.extend({
   initialize: function () {
     this.listenTo(this.model, 'sync', this.render);
     var newCardView = new Trellino.Views.NewCardView({model: this.model})
-    this.addSubview(".cards", newCardView)
+    this.addSubview("#new-card", newCardView)
   },
   events: {
     "click .remove-list": "removeList"

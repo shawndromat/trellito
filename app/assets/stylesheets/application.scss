@@ -19,9 +19,28 @@ body {
   background-color: #22719f;
 }
 
-.list h4 {
-  display: inline-block;
+.list-header {
+  // margin: 10px auto;
+  text-align: center;
+
+  h4 {
+    display: inline-block;
+    // margin: 10px auto;
+  }
+
+  button {
+    width: 30px;
+    height: 30px;
+
+    .glyphicon {
+      margin: auto auto auto -5px;
+    }
+  }
 }
+
+.cards {
+}
+
 
 .list {
   background-color: #dbdbdb;
