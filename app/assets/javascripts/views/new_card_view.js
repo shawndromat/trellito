@@ -15,7 +15,7 @@ window.Trellino.Views.NewCardView = Backbone.View.extend({
     console.log(formData)
     var card = new Trellino.Models.Card(formData["card"]);
 
-    list.save({}, {
+    card.save({}, {
       success: function () {
         view.model.cards().add(card);
         view.render();
