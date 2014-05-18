@@ -13,5 +13,5 @@ window.Trellino.Views.AddMemberView = Backbone.View.extend({
     var formData = $(event.target).serializeJSON();
     console.log(formData);
     this.model.save(formData, {patch: true})
-  }
+  },
 });

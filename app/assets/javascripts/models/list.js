@@ -7,7 +7,7 @@ window.Trellino.Models.List = Backbone.Model.extend({
   },
   cards: function (){
     if(!this._cards) {
-      var list = this
+      var list = this;
       this._cards = new Trellino.Collections.ListCards([], {list: list});
     }
     return this._cards;
