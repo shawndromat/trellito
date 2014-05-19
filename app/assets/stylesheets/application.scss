@@ -43,22 +43,24 @@ h3 {
 
 .list-header {
   // margin: 10px auto;
-  text-align: center;
-
   h4 {
     display: inline-block;
+    float: left;
     // margin: 10px auto;
   }
 
-  button {
-    width: 30px;
-    height: 30px;
-
-    .glyphicon {
-      margin: auto auto auto -5px;
-    }
+  .glyphicon {
+    display: inline-block;
+    float: right;
+    color: #999;
+    position: relative;
+    top: 7px;
+    left: 7px;
+    // display: none;
   }
 }
+
+
 
 .new-card h4 {
   text-align: center;
@@ -80,8 +82,18 @@ h3 {
   border-bottom: 1px solid #bdbdbd;
 
   h4 {
+    display: inline-block;
     margin: 5px 0 5px 5px;
     padding: 5px;
+  }
+
+  .glyphicon {
+    display: inline-block;
+    float: right;
+    color: #999;
+    position: relative;
+    top: 7px;
+    left: -7px;
   }
 }
 

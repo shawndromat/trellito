@@ -13,7 +13,6 @@ window.Trellino.Views.NewCardView = Backbone.View.extend({
     event.preventDefault();
     var view = this;
     var formData = $(event.target).serializeJSON();
-    console.log(formData)
     var card = new Trellino.Models.Card(formData["card"]);
 
     card.save({}, {

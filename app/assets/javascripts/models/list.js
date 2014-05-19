@@ -15,6 +15,7 @@ window.Trellino.Models.List = Backbone.Model.extend({
   parse: function (response) {
     if (response.cards) {
       this.cards().set(response.cards, {parse: true});
+      this.cards().sort();
       delete response.cards;
     }
     return response;

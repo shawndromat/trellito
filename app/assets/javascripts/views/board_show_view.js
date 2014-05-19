@@ -14,7 +14,25 @@ window.Trellino.Views.BoardShowView = Backbone.CompositeView.extend({
     var renderedContent = this.template({board: this.model});
     this.$el.html(renderedContent);
     this.attachSubviews();
+    $('.list').find(".remove-list").hide();
+    $('.list').hover(function (){
+      $(this).find(".remove-list").show();
+    }, function (){
+      $(this).find(".remove-list").hide();
+    });
 
+    $('.card-show').find(".remove-card").hide();
+    $('.card-show').hover(function (){
+      $(this).find(".remove-card").show();
+    }, function (){
+      $(this).find(".remove-card").hide();
+    });
+
+    // $( ".draggable" ).draggable();
+    $(".sortable-list").sortable({
+      axis: "x",
+      connectWith: ".sortable-list",
+     });
     return this;
   },
   addNewListView: function () {
