@@ -1,8 +1,15 @@
-<h1><%= board.escape('title') %></h1>
+<div class="row">
+  <div class="col-md-12">
+    <h3><%= board.escape('title') %></h3>
 
-<div id="add-member-div">
-  <button id="add-member">Add a member</button>
+    <div id="add-member-div">
+      <button class="btn btn-primary" id="add-member">Add a member</button>
+    </div>
+  </div>
 </div>
 
-<div id="new-board-list"></div>
+<div class="row">
+  <div class="col-md-12" id="new-board-list"></div>  
+</div>
+
 <div id="all-lists"></div>

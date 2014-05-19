@@ -21,7 +21,11 @@ Trellino.Routers.AppRouter = Backbone.Router.extend({
   },
   _swapView: function (view) {
     if (this.currentView) {
-      this.currentView.leave();
+      if (this.currentView.leave) {
+        this.currentView.leave();
+      } else {
+        this.currentView.remove();
+      }
     }
     this.currentView = view;
     $('#content').html(this.currentView.render().$el)

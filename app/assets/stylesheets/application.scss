@@ -13,10 +13,32 @@
  *= require_tree .
  */
 
+$headings-color: #444;
+
 @import "bootstrap";
 
 body {
   background-color: #22719f;
+}
+
+h3 {
+  color: #FFF;
+  display: inline-block;
+  float: left;
+}
+
+#add-member-div {
+  float: left;
+  margin: 10px 0 10px 10px;
+}
+
+.navbar-default {
+  border: none;
+  background-color: #1e628a;
+
+  .navbar-brand {
+    color: #6292ae;
+  }
 }
 
 .list-header {
@@ -38,15 +60,36 @@ body {
   }
 }
 
+.new-card h4 {
+  text-align: center;
+}
+
+.card-form input {
+  margin: 5px 0;
+}
+
 .cards {
+  margin-bottom: 15px;
+}
+
+.card-show {
+  width: 230px;
+  background-color: #FFF;
+  border-radius: 5px;
+  margin: 5px auto 0 auto;
+  border-bottom: 1px solid #bdbdbd;
+
+  h4 {
+    margin: 5px 0 5px 5px;
+    padding: 5px;
+  }
 }
 
 
 .list {
   background-color: #dbdbdb;
   border-radius: 5px;
-  width: 300px;
+  width: 250px;
   margin: 20px 8px;
   float: left;
-  border: 1px solid black;
 }

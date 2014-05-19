@@ -1,4 +1,5 @@
 window.Trellino.Views.NewCardView = Backbone.View.extend({
+  className: "col-md-12",
   events:{
     "submit .card-form" : "submit"
   },
