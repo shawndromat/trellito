@@ -42,21 +42,18 @@ h3 {
 }
 
 .list-header {
-  // margin: 10px auto;
   h4 {
     display: inline-block;
     float: left;
-    // margin: 10px auto;
   }
 
   .glyphicon {
-    display: inline-block;
+    display: none;
     float: right;
     color: #999;
     position: relative;
     top: 7px;
     left: 7px;
-    // display: none;
   }
 }
 
@@ -88,13 +85,24 @@ h3 {
   }
 
   .glyphicon {
-    display: inline-block;
+    display: none;
     float: right;
     color: #999;
     position: relative;
     top: 7px;
     left: -7px;
   }
+  .glyphicon.glyphicon-show {
+    display: none;
+  }
+}
+
+.card-form {
+  // display: none;
+}
+
+.sortable-card {
+  min-height: 100px;
 }
 
 

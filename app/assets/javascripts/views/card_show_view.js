@@ -8,6 +8,7 @@ window.Trellino.Views.CardShowView = Backbone.View.extend({
   className: "card-show",
   template: JST["card_show"],
   render: function () {
+    $(this.el).attr('data-card-id', this.model.id);
     var renderedContent = this.template({card: this.model});
     this.$el.html(renderedContent);
     return this;
